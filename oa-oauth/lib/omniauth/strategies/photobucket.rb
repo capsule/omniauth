@@ -15,7 +15,7 @@ module OmniAuth
       # Initialize the middleware
       def initialize(app, api_key = nil, private_key = nil, options = {}, &block)
         client_options = {
-          :site => 'https://api.photobucket.com'
+          :site => 'http://api.photobucket.com',
           :request_token_path => '/login/request',
           :authorize_path => '/apilogin/login',
           :access_token_path => '/login/access'
